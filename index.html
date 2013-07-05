@@ -2,12 +2,15 @@
 <html>
   <head>
     <title>Bootstrap 101 Template</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/extra.css" rel="stylesheet" media="screen">
   </head>
   <body>
+    <img src="img/laptop-sketch.jpg" style="z-index: -1; border: 0; position: absolute; top: 40px; left: 0;">
+
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -26,6 +29,11 @@
         <div class="span3">
           <blockquote>
             <p>Short desc.</p>
+          </blockquote>
+        </div>
+        <div class="span3">
+          <blockquote>
+            TODO: Feedback nakon <i>n</i> sekundi provedenih na siteu! (i spremiti u cookie ako je čovjek već dao feedback)
           </blockquote>
         </div>
 
@@ -57,6 +65,27 @@
             </div>
             <div class="widget-content">
               bla
+            </div>
+          </div>
+
+          <div class="widget">
+            <div class="widget-header">
+              <i class="icon-thumbs-up"></i>
+              <i class="icon-thumbs-down"></i>
+              <h3>Feedback</h3>
+            </div>
+            <div class="widget-content">
+              <form>
+                <fieldset>
+                  <div class="input-prepend">
+                    <span class="add-on">@</span>
+                    <input type="text" class="span9" placeholder="E-mail (opcionalno)" />
+                  </div>
+
+                  <textarea class="span11" rows="4" placeholder="Feedback text"></textarea>
+                  <button type="submit" class="btn"><i class="icon-envelope"></i> Submit</button>
+                </fieldset>
+              </form>
             </div>
           </div>
         </div>
